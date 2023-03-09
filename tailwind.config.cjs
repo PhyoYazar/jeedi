@@ -1,6 +1,6 @@
-/** @type {import('tailwindcss').Config} */
 import path from "node:path";
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     // "./index.html",
