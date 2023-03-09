@@ -50,6 +50,21 @@
 
 
 
+
+  "scripts": {
+    "build": "concurrently \"yarn build:css\" \"tsc --emitDeclarationOnly && vite build\"",
+    "build:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./dist/index.css",
+    "storybook": "concurrently \"yarn storybook:css\" \"storybook dev -p 6006\"",
+    "storybook:css": "tailwindcss -w -i ./src/tailwind-entry.css -o ./src/index.css",
+    "build-storybook": "concurrently \"yarn build-storybook:css\" \"storybook build\"",
+    "build-storybook:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./src/index.css"
+  },
+
+
+
+
+
+
 // "scripts": {
   //   "dev": "vite",
   //   "build": "tsc && vite build",
