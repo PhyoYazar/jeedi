@@ -1,4 +1,4 @@
-const { default: path } = require("path");
+const { join } = require("path");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -7,20 +7,11 @@ module.exports = {
     // "./src/**/*.{js,ts,jsx,tsx}",
     // "./src/**/*.mdx",
     "./src/safelist.txt",
-    path.join(__dirname, "src/**/!(*.stories|*.spec).{js,ts,jsx,tsx,html}"),
-    path.join(
+    join(__dirname, "src/**/!(*.stories|*.spec).{js,ts,jsx,tsx,html}"),
+    join(
       __dirname,
       "./node_modules/jeedi/**/!(*.stories|*.spec).{js,ts,jsx,tsx,html}"
     ),
-  ],
-
-  content: [
-    join(__dirname, "src/**/!(*.stories|*.spec).{ts,html}"),
-    join(
-      __dirname,
-      "../../node_modules/<my npm package name>/**/!(*.stories|*.spec).{ts,html,js}"
-    ),
-    ...createGlobPatternsForDependencies(__dirname),
   ],
 
   theme: {
