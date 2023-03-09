@@ -1,0 +1,26 @@
+{
+
+	"unwantedRecommendations": [],
+  "recommendations": [
+		"VisualStudioExptTeam.vscodeintellicode", 
+		"ms-vscode.vscode-typescript-tslint-plugin", 
+		"shardulm94.trailing-spaces",
+		"BriteSnow.vscode-toggle-quotes",
+		"Gruntfuggly.todo-tree",
+		"meganrogge.template-string-converter",
+		"richie5um2.vscode-sort-json",
+		"2gua.rainbow-brackets",
+		"esbenp.prettier-vscode",
+		"christian-kohler.path-intellisense",
+		"quicktype.quicktype",
+		"PulkitGangwar.nextjs-snippets",
+		"DavidAnson.vscode-markdownlint",
+		"shd101wyy.markdown-preview-enhanced",
+		"MariusAlchimavicius.json-to-ts",
+		"Orta.vscode-jest",
+		"oderwat.indent-rainbow",
+		"sleistner.vscode-fileutils",
+		"dbaeumer.vscode-eslint",
+		"MariusAlchimavicius.json-to-ts",
+	],
+}
