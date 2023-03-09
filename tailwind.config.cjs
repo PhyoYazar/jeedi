@@ -1,10 +1,26 @@
 /** @type {import('tailwindcss').Config} */
+import path from "node:path";
+
 module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    // "./index.html",
+    // "./src/**/*.{js,ts,jsx,tsx}",
     // "./src/**/*.mdx",
     "./src/safelist.txt",
+    path.join(__dirname, "src/**/!(*.stories|*.spec).{js,ts,jsx,tsx,html}"),
+    path.join(
+      __dirname,
+      "./node_modules/jeedi/**/!(*.stories|*.spec).{js,ts,jsx,tsx,html}"
+    ),
+  ],
+
+  content: [
+    join(__dirname, "src/**/!(*.stories|*.spec).{ts,html}"),
+    join(
+      __dirname,
+      "../../node_modules/<my npm package name>/**/!(*.stories|*.spec).{ts,html,js}"
+    ),
+    ...createGlobPatternsForDependencies(__dirname),
   ],
 
   theme: {
