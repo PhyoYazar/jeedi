@@ -33,7 +33,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src", "lib.ts"),
-      name: "jeedi",
+      name: "jh-d",
       formats: ["es", "umd"],
       fileName: (format) => `jeedi.${format}.js`,
     },

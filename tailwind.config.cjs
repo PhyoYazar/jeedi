@@ -1,17 +1,18 @@
-const { join } = require("path");
+// const { join } = require("path");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    // "./index.html",
-    // "./src/**/*.{js,ts,jsx,tsx}",
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
     // "./src/**/*.mdx",
     "./src/safelist.txt",
-    join(__dirname, "src/**/!(*.stories|*.spec).{js,ts,jsx,tsx,html}"),
-    join(
-      __dirname,
-      "./node_modules/jeedi/**/!(*.stories|*.spec).{js,ts,jsx,tsx,html}"
-    ),
+    "./node_modules/jeedi/**/!(*.stories|*.spec).{js,ts,jsx,tsx,html}",
+    // join(__dirname, "src/**/!(*.stories|*.spec).{js,ts,jsx,tsx,html}"),
+    // join(
+    //   __dirname,
+    //   "./node_modules/jeedi/**/!(*.stories|*.spec).{js,ts,jsx,tsx,html}"
+    // ),
   ],
 
   theme: {
